@@ -21,6 +21,10 @@ export const startServer = () => {
     }),
   );
 
+  app.get('/', (req, res) => {
+    res.json({ message: 'Hello world!' });
+  });
+
   app.use((req, res, next) => {
     if (req.method === 'HEAD') {
       res.status(200).end();

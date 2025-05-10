@@ -21,6 +21,14 @@ export const startServer = () => {
     }),
   );
 
+  app.use((req, res, next) => {
+    if (req.method === 'HEAD') {
+      res.status(200).end();
+    } else {
+      next();
+    }
+  });
+
   app.use(contactsRouter);
 
   app.use('*', notFoundHandler);

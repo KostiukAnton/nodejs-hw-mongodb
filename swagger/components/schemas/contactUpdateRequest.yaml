@@ -1,0 +1,23 @@
+type: object
+properties:
+  name:
+    type: string
+    example: 'John Smith'
+  phoneNumber:
+    type: string
+    example: '1234567890'
+  email:
+    type: string
+    format: email
+    example: 'john@example.com'
+  contactType:
+    type: string
+    enum: [work, home, personal]
+    example: personal
+  isFavourite:
+    type: boolean
+    example: true
+  photo:
+    type: string
+    format: binary
+required: []

@@ -209,11 +209,6 @@
                       "personal"
                     ]
                   },
-                  "userId": {
-                    "description": "ID of the user who owns this contact",
-                    "type": "string",
-                    "example": "683ecbb50d9c3c246c4b4177"
-                  },
                   "photo": {
                     "description": "Student's photo",
                     "type": "string",
